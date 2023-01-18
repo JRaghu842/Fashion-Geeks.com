@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#Top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #f9f9f9;
+    height: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Top>p{
+    padding-left: 40%;
+}
+
+#Top>div{
+    width: 28%;
+    display: flex;
+}
+
+
+#Top>div>div{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+#Top>div>div>img{
+    width: 20%;
+    padding-right: 10px;
+}
+
+#Top>div>div>p{
+    font-size: 12px;
+}
+
+
+
+
+#navbar{
+    width: 96%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#navbar>div:nth-child(1){
+    width: 27%;
+    display: flex;
+    align-items: center;
+    color: #00a9e0;
+}
+
+#navbar>div:nth-child(1)>img{
+    width: 15%;
+    height: 15%;
+    margin-right: 5px;
+}
+
+#navmid{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navmid>div{
+    text-align: center;
+}
+
+#navmid>div>p{
+    margin-top: -20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: gray;
+}
+
+#navmid>div>h4{
+    font-weight: 500;
+}
+
+#navbar input{
+    padding: 8px;
+    border-radius: 15px;
+    border-color: gray;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#navbar button{
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    border: none;
+    background-color: #00a9e0;
+    font-size: 15px;
+    font-weight: 400;
+    color: white
+}
+
+hr{
+    border: 1.5px solid #00a9e0;
+}
+
+#fast{
+
+    width: 98%;
+    margin: auto;
+    background-color: #00a9e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+#fast>h3{
+    padding: 12px;
+}
+
+
+
+
+
+#left-div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 98%;
+    margin: auto;
+}
+
+#left-div h2{
+    color: rgb(78, 78, 78);
+    margin-bottom: -5px;
+}
+
+#left-div hr{
+    border: 1px solid gray;
+}
