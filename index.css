@@ -451,6 +451,9 @@ margin: auto;
 margin-top: 20px;
 }
 
+#scrAbu>div:nth-child(3){
+    margin-right: -8%;
+}
 
 #scrAbu>div:nth-child(3)>input{
 padding: 8px;
@@ -468,4 +471,10 @@ border: 1px solid gray;
 
 #scrAbu>div:nth-child(3)>h1{
     color: #00a9e0;
+}
+
+
+#scrAbu img{
+   width: 20%;
+   margin-top: -15px;
 }
