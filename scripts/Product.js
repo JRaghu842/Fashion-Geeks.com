@@ -124,11 +124,22 @@ function Display(data){
     let btn = document.createElement("button")
     btn.innerText = "Add to Cart"
 
+    let detail = document.createElement("p")
+    detail.innerText = "Details"
+    detail.className = "detail"
+    detail.addEventListener("click", ()=>{
+        desc.innerText = "Short sleeves, "+" Jasrey lined, "+ " 100% cotton lightweight material. " + data.description
+        desc.style.textAlign ="justify"
+    })
+
+    let desc = document.createElement("p")
+    desc.innerText = ""
+
     div1.append(image1,img2,img3,img4)
     div2.append(image)
     divSub3_1.append(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8)
     divSub3_2.append(imageblk,imagered,imagepink)
-    div3.append(price,title,ratings,color,divSub3_2,size,divSub3_1,btn)
+    div3.append(price,title,ratings,color,divSub3_2,size,divSub3_1,btn,detail,desc)
 
     container.append(div1,div2,div3)
 
