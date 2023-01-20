@@ -19,8 +19,13 @@ function FetchData(){
 FetchData()
 
 
-let container = document.getElementById("main")
+let cartData = JSON.parse(localStorage.getItem("cartData")) || []
 
+
+
+
+
+let container = document.getElementById("main")
 
 function Display(data){
     container.innerHTML=""
@@ -30,18 +35,34 @@ function Display(data){
 
     let image1 = document.createElement("img")
     image1.src = data.image
+    image1.addEventListener("click",()=> {
+    image1.style.borderColor = "#00a9e0"  
+    img2.style.borderColor = "gray"
+    img3.style.borderColor = "gray"
+
+
+    image.src = data.image
+    })
 
     let img2 = document.createElement("img")
     img2.src = data.img2
     img2.addEventListener("click",() =>{
     img2.style.borderColor = "#00a9e0"
     image1.style.borderColor = "gray"
-    
+    image.src = data.img2
+    img3.style.borderColor = "gray"
     
     })
 
     let img3 = document.createElement("img")
     img3.src = data.img3
+    img3.addEventListener("click",() =>{
+    img3.style.borderColor = "#00a9e0"
+    image1.style.borderColor = "gray"
+    image.src = data.img3
+    img2.style.borderColor = "gray"
+
+    })
 
     let img4 = document.createElement("img")
     img4.src = data.img4
@@ -124,11 +145,29 @@ function Display(data){
     let btn = document.createElement("button")
     btn.innerText = "Add to Cart"
 
+    btn.addEventListener("click",()=>{
+        if(CheckDuplicate(data)){
+            alert("Product Already in cart")
+          }
+          else {
+            cartData.push(data)
+            localStorage.setItem("cart",JSON.stringify(cartData))
+            alert("Product Added to cart")
+            counting()
+
+
+          }
+    })
+
+
+
+
+
     let detail = document.createElement("p")
     detail.innerText = "Details"
     detail.className = "detail"
     detail.addEventListener("click", ()=>{
-        desc.innerText = "Short sleeves, "+" Jasrey lined, "+ " 100% cotton lightweight material. " + data.description
+        desc.innerHTML =`Short sleeves,  <br> Jasrey lined, <br> 100% cotton lightweight material.`  + data.description
         desc.style.textAlign ="justify"
     })
 
@@ -144,4 +183,21 @@ function Display(data){
     container.append(div1,div2,div3)
 
 // })
+}
+
+
+function CheckDuplicate(product){
+    for(let i=0; i<cartData.length; i++){
+
+    if(cartData[i].id === product.id){
+        return true
+      }
+    }
+    return false
+}
+
+
+let itemCount = document.getElementById("count-item")
+function counting(){
+    itemCount.innerText =  cartData.length
 }

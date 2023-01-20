@@ -1,5 +1,9 @@
 let API = "https://63c6dfbcd307b7696742e8ff.mockapi.io/newone"
 
+let newData = []
+
+
+
 function FetchData(){
     fetch(API)
     .then((element)=> {
@@ -7,7 +11,8 @@ function FetchData(){
     })
     .then((maindata)=> {
         console.log(maindata)
-        Display(maindata)
+        newData = maindata
+        Display(newData)
     })
     .catch((err)=>{
         console.log(err);
@@ -45,3 +50,26 @@ data.forEach((element)=>{
 
 })
 }
+
+
+
+// ***************************search***********************//
+
+let searchform  = document.querySelector("form")
+
+searchform.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    let search = searchform.search.value
+
+    let filtered = newData.filter((element) => {       
+    return element.title.toLowerCase().includes(search.toLowerCase())        
+    })
+    Display(filtered)
+    window.location.href ="pages/Category_page.html"
+})
+
+
+
+
+

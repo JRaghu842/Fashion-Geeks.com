@@ -11,6 +11,9 @@ body{
     background-color: #f9f9f9;
     height: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #Top>p{
@@ -45,12 +48,16 @@ body{
 
 
 #navbar{
-    width: 96%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    position: sticky;
+    top: 35px;
+    z-index: 1;
 
 }
 #navbar>div:nth-child(1){
@@ -58,6 +65,7 @@ body{
     display: flex;
     align-items: center;
     color: #00a9e0;
+    margin-left: 10px;
 }
 
 #navbar>div:nth-child(1)>img{
@@ -87,7 +95,11 @@ body{
     font-weight: 500;
 }
 
-#navbar input{
+#navbar>div:nth-child(3){
+    margin-right:10px ;
+}
+
+#navbar input:nth-child(1){
     padding: 8px;
     border-radius: 15px;
     border-color: gray;
@@ -95,7 +107,7 @@ body{
     font-weight: 400;
 }
 
-#navbar button{
+#navbar input:nth-child(2){
     padding: 8px 15px;
     border-radius: 12px;
     border: 1px solid gray;
