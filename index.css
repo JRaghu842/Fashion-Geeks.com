@@ -11,6 +11,9 @@ body{
     background-color: #f9f9f9;
     height: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #Top>p{
@@ -45,12 +48,18 @@ body{
 
 
 #navbar{
-    width: 96%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    position: sticky;
+    top: 35px;
+    z-index: 1;
+
+
 
 }
 #navbar>div:nth-child(1){
@@ -58,6 +67,8 @@ body{
     display: flex;
     align-items: center;
     color: #00a9e0;
+    margin-left: 10px;
+
 }
 
 #navbar>div:nth-child(1)>img{
@@ -85,6 +96,62 @@ body{
 
 #navmid>div>h4{
     font-weight: 500;
+    cursor: pointer;
+}
+
+#navmid>div:nth-child(1):hover .Dropdown-menu{
+display: block;
+
+}
+
+#navmid>div:nth-child(1){
+    position: relative;
+}
+
+.Dropdown-menu a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 13px;
+    width: 100%;
+}
+
+.Dropdown-menu h5{
+    font-weight: 500;
+}
+
+
+
+.Dropdown-menu{
+    text-align: justify;
+    margin-top: -25px;
+    padding-left: 5%;
+    width: 170px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.Dropdown-menu h5:hover{ 
+    padding: 7px 0px;
+    background-color: #00a9e0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.Dropdown-menu a:hover{
+    padding: 7px 0px;
+    background-color: #00a9e0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+#navbar>div:nth-child(3){
+    margin-right:10px ;
 }
 
 #navbar input{
@@ -179,18 +246,19 @@ margin: auto;
 
 }
 
-#mid2>div>button{
-   margin: auto;
-   width: 14%;
-   padding: 10px;
-   border-radius: 5px;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size: 15px;
-   font-weight: 500;
-   background-color: white;
-   color: rgb(55, 55, 55);
-   border: 1px solid black;
-
+#mid2>div>a{
+    margin: auto;
+    width: 12%;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: white;
+    color: rgb(55, 55, 55);
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
 }
 
 #mid3{
@@ -212,9 +280,13 @@ margin: auto;
 
 #mid3>div>img{
     width: 95%;
-
 }
 
+#mid3 a{
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+
+}
 
 
 #mid4{
@@ -347,9 +419,9 @@ margin: auto;
 
 }
 
-#mid5>div>button{
+#mid5>div>a{
    margin: auto;
-   width: 14%;
+   width: 12%;
    padding: 10px;
    border-radius: 5px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -358,6 +430,8 @@ margin: auto;
    background-color: white;
    color: rgb(55, 55, 55);
    border: 1px solid black;
+   text-decoration: none;
+   text-align: center;
 
 }
 

@@ -11,6 +11,10 @@ body{
     background-color: #f9f9f9;
     height: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
 }
 
 #Top>p{
@@ -45,12 +49,16 @@ body{
 
 
 #navbar{
-    width: 96%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    position: sticky;
+    top: 35px;
+    z-index: 1;
 
 }
 #navbar>div:nth-child(1){
@@ -58,6 +66,7 @@ body{
     display: flex;
     align-items: center;
     color: #00a9e0;
+    margin-left: 10px;
 }
 
 #navbar>div:nth-child(1)>img{
@@ -85,6 +94,10 @@ body{
 
 #navmid>div>h4{
     font-weight: 500;
+}
+
+#navbar>div:nth-child(3){
+    margin-right:10px ;
 }
 
 #navbar input{
@@ -146,6 +159,13 @@ hr{
 
 .div2{
     width: 100%;
+    margin: auto 0;
+}
+
+.div2 img{
+    
+    width: 80%;
+    object-fit: cover;
 }
 
 .div3{
