@@ -9,11 +9,11 @@ if(userName){
     hreflink.innerText = userName
 }
 
-let firstname = document.getElementById("firstname").value
-let lastname = document.getElementById("lastname").value
-let address1 = document.getElementById("address1").value
-let city = document.getElementById("city").value
-let pincode = document.getElementById("pincode").value
+let firstname = document.getElementById("firstname")
+let lastname = document.getElementById("lastname")
+let address1 = document.getElementById("address1")
+let city = document.getElementById("city")
+let pincode = document.getElementById("pincode")
 
 
 
@@ -36,7 +36,7 @@ itemCount.innerText = CLSData[CLSData.length-1].quantity
 let placeorder =document.getElementById("placeorder")
 placeorder.addEventListener("click",() =>{
 
-    if(firstname == "" || lastname == "" || address1 == "" || city == ""|| pincode ){
+    if((firstname.value == "" )|| (lastname.value == "" )|| (address1.value == "") || (city.value == "") ||(pincode.value == "" )){
       alert("Enter all details to place order")
     }
     else {
