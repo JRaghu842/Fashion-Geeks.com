@@ -15,11 +15,22 @@ body{
 
 #Top>p{
     padding-left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Top a{
+    text-decoration: none;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: black;
+
 }
 
 #Top>div{
     width: 28%;
     display: flex;
+    align-items: center;
 }
 
 

@@ -1,3 +1,14 @@
+let hreflink = document.getElementById("hrefLogin")
+console.log(hreflink);
+
+
+let userName = localStorage.getItem("name")
+console.log(userName);
+
+if(userName){
+    hreflink.innerText = userName
+}
+
 let LSData = JSON.parse(localStorage.getItem("cart")) || []
 
 let container = document.getElementById("Allcards")
@@ -99,3 +110,7 @@ localStorage.setItem("total",JSON.stringify(storeTotal))
 
 Display()
 
+let GoToHomePage = document.getElementById("GoToHomePage")
+GoToHomePage.addEventListener("click", ()=>{
+  window.location.assign("/index.html")
+})

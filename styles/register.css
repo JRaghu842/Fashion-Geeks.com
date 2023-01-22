@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-
 }
 
 #Top{
@@ -12,16 +11,26 @@ body{
     background-color: #f9f9f9;
     height: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 #Top>p{
     padding-left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Top a{
+    text-decoration: none;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: black;
+
 }
 
 #Top>div{
     width: 28%;
     display: flex;
+    align-items: center;
 }
 
 
@@ -42,7 +51,6 @@ body{
 #Top>div>div>p{
     font-size: 12px;
 }
-
 
 
 
@@ -188,9 +196,11 @@ form{
     text-align: center;
 }
 
-p{
+form p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(62, 62, 62);
+     margin-bottom: 40px;
+    margin-top: -10px; 
 }
 
 form input{
@@ -205,7 +215,7 @@ form input{
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-form>input:nth-child(5){
+form>input:nth-child(4){
     width: 20%;
     display: block;
     margin: auto;
@@ -241,6 +251,7 @@ body>p{
     color: rgb(62, 62, 62);
     font-size: 18px;
     font-family: 500;
+
 }
 
 #already{
