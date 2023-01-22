@@ -11,16 +11,26 @@ body{
     background-color: #f9f9f9;
     height: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 #Top>p{
     padding-left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Top a{
+    text-decoration: none;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: black;
+
 }
 
 #Top>div{
     width: 28%;
     display: flex;
+    align-items: center;
 }
 
 
@@ -43,6 +53,10 @@ body{
 }
 
 
+#hrefLogin{
+    background-color: #f6f6f6;
+    box-shadow: none;
+}
 
 
 #navbar{
@@ -66,13 +80,14 @@ body{
     align-items: center;
     color: #00a9e0;
     margin-left: 10px;
-
+    padding: 20px;
 }
 
 #navbar>div:nth-child(1)>img{
     width: 15%;
-    height: 15%;
+    height: 13%;
     margin-right: 5px;
+
 }
 
 #navmid{

@@ -1,3 +1,14 @@
+let hreflink = document.getElementById("hrefLogin")
+console.log(hreflink);
+
+
+let userName = localStorage.getItem("name")
+console.log(userName);
+
+if(userName){
+    hreflink.innerText = userName
+}
+
 let PrAPI = "https://63c6dfbcd307b7696742e8ff.mockapi.io/newone/13"
 let newData = []
 
@@ -207,3 +218,9 @@ let itemCount = document.getElementById("count-item")
 function counting(){
     itemCount.innerText =  cartData.length
 }
+
+
+let GoToHomePage = document.getElementById("GoToHomePage")
+GoToHomePage.addEventListener("click", ()=>{
+  window.location.assign("/index.html")
+})

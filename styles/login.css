@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-
 }
 
 #Top{
@@ -12,16 +11,26 @@ body{
     background-color: #f9f9f9;
     height: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 #Top>p{
     padding-left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Top a{
+    text-decoration: none;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: black;
+
 }
 
 #Top>div{
     width: 28%;
     display: flex;
+    align-items: center;
 }
 
 
@@ -209,6 +218,10 @@ form>input:nth-child(3){
     color: white;
     border-radius: 5px;
 
+}
+
+#forgot{
+    font-size: 15px;
 }
 
 body>a{

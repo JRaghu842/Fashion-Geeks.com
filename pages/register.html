@@ -14,14 +14,14 @@
         <p>Free Shipping on $35+ Orders</p>
         <div>
         <div>
-            <img src="/images/login2.png" alt="">
-            <p>login</p>
+            <img id="GoToHomePage" src="/images/login2.png" alt="">
+            <a id="hrefLogin" href="/pages/login.html">Login</a>
         </div>
         <div>
             <img src="/images/ord.png" alt="">
-            <p>orders</p>
+            <p>Orders</p>
         </div>
-        <div >
+        <div>
             <img src="/images/cart.png" alt="">
             <p id="count-item">Empty</p>
         </div>
@@ -71,19 +71,26 @@
 
     <hr>
 
+
     <h1>Create a new account.</h1>
     <form>
-        <input type="text" placeholder="Email">
-        <input type="text" placeholder="Password">
+        <div>
+            <input type="text" placeholder="Name" id="Name">
+            <input type="email" placeholder="Email" id="Email">
+        </div>
+        <div>
+            <input type="password" placeholder="Password" id="Password">
+            <input type="password" placeholder="Confirm Password" id="CPassword">
+        </div>
+
         <p>Remember, your password is 8-20 characters, includes one letter and one number.</p>
-        <input type="text" placeholder="Confirm Password">
-        <input type="submit" placeholder="Sign up">
+
+        <input type="submit" placeholder="Sign up" id="submit">
     </form>
 
     <p id="already">Already have an account?</p>
 
     <a href="./login.html">Sign in</a>
-    <!-- <button> Sign in</button> -->
 
     <div id="scrAbu">
         <div>
