@@ -1,0 +1,353 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#Top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #f9f9f9;
+    height: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#Top>p{
+    padding-left: 40%;
+}
+
+#Top>div{
+    width: 28%;
+    display: flex;
+}
+
+
+#Top>div>div{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+#Top>div>div>img{
+    width: 20%;
+    padding-right: 10px;
+}
+
+#Top>div>div>p{
+    font-size: 12px;
+}
+
+
+
+
+#navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+
+
+}
+#navbar>div:nth-child(1){
+    width: 27%;
+    display: flex;
+    align-items: center;
+    color: #00a9e0;
+    margin-left: 10px;
+
+}
+
+#navbar>div:nth-child(1)>img{
+    width: 15%;
+    height: 15%;
+    margin-right: 5px;
+}
+
+#navmid{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navmid>div{
+    text-align: center;
+}
+
+#navmid>div>p{
+    margin-top: -20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: gray;
+}
+
+#navmid>div>h4{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#navmid>div:nth-child(1):hover .Dropdown-menu{
+display: block;
+
+}
+
+#navmid>div:nth-child(1){
+    position: relative;
+}
+
+.Dropdown-menu a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 13px;
+    width: 100%;
+}
+
+.Dropdown-menu h5{
+    font-weight: 500;
+}
+
+
+
+.Dropdown-menu{
+    text-align: justify;
+    margin-top: -25px;
+    padding-left: 5%;
+    width: 170px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.Dropdown-menu h5:hover{ 
+    padding: 7px 0px;
+    background-color: #00a9e0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.Dropdown-menu a:hover{
+    padding: 7px 0px;
+    background-color: #00a9e0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+#navbar>div:nth-child(3){
+    margin-right:10px ;
+}
+
+#navbar input{
+    padding: 8px;
+    border-radius: 15px;
+    border-color: gray;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#navbar button{
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    border: none;
+    background-color: #00a9e0;
+    font-size: 15px;
+    font-weight: 400;
+    color: white
+}
+
+hr{
+    border: 1.5px solid #00a9e0;
+}
+
+
+/* ------------------------- */
+
+#container{
+ margin-top: 40px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding: 10px;
+ display: flex;
+ justify-content: space-around;
+ color: rgb(62, 62, 62);
+}
+
+#left-div{
+    width: 60%;
+}
+
+#address-div{
+    /* border: 1px solid black; */
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#address-div>h2{
+    text-align: left;
+}
+
+#address-div input{
+    padding: 14px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(77, 77, 77);
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+#address-div>div:nth-child(2){
+
+    text-align: center;
+}
+
+#address-div>div:nth-child(2)>input{
+    width: 46%;
+}
+
+#address-div>input{
+    width: 95%;
+}
+
+#address-div>div:nth-child(5)>input{
+    width: 46%;
+}
+
+#address-div>p{
+    text-align: left;
+    color: #00a9e0;
+}
+
+#address-div span{
+    color: rgb(77, 77, 77);
+}
+
+#payment-div{
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#payment-div>h2{
+    text-align: left;
+}
+
+#payment-div>div:nth-child(2){
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#payment-div>div:nth-child(2)>button{
+    width: 40%;
+    padding: 14px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color:#00a9e0;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+#payment-div>input{
+    width: 46%;
+    padding: 14px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(77, 77, 77);
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#payment-div>div:nth-child(4)>input:nth-child(1){
+    width: 35%;
+    padding: 14px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(77, 77, 77);
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#payment-div>div:nth-child(4)>input:nth-child(2){
+    width: 25%;
+    padding: 14px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(77, 77, 77);
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#payment-div>p{
+    text-align: left;
+    color: #00a9e0;
+}
+
+#payment-div span{
+    color: rgb(77, 77, 77);
+}
+
+#right-div{
+    width: 30%;;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 600px;
+
+}
+
+
+
+#right-div>div:nth-child(3){
+display: flex;
+justify-content: space-between;
+padding: 0px 20px;
+}
+
+
+#placeorder{
+    text-align: center;
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: #00a9e0;
+    border: #00a9e0;
+    padding: 10px 25px;
+    font-size: 17px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 25px;
+
+}

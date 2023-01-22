@@ -11,9 +11,6 @@ body{
     background-color: #f9f9f9;
     height: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
 
 #Top>p{
@@ -56,7 +53,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
     position: sticky;
-    top: 35px;
+    top: 0px;
     z-index: 1;
 
 
