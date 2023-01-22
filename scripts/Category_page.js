@@ -29,6 +29,7 @@ function Display(data){
 data.forEach((element)=>{
 
     let card = document.createElement("div")
+    card.className = "card"
 
     let image = document.createElement("img")
     image.src = element.image
@@ -44,12 +45,18 @@ data.forEach((element)=>{
     let desc = document.createElement("p")
     desc.innerText = element.description
 
+    // let ancher = document.createElement("a")
+    // ancher.href = "http://127.0.0.1:5500/pages/Product.html"
 
     card.append(image, line, title, price, desc)
+    // ancher.append(card)
+    // container.append(ancher)
     container.append(card)
+
 
 })
 }
+
 
 
 
@@ -66,7 +73,6 @@ searchform.addEventListener("click",(e)=>{
     return element.title.toLowerCase().includes(search.toLowerCase())        
     })
     Display(filtered)
-    window.location.href ="pages/Category_page.html"
 })
 
 

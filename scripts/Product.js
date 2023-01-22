@@ -19,8 +19,7 @@ function FetchData(){
 FetchData()
 
 
-let cartData = JSON.parse(localStorage.getItem("cartData")) || []
-
+let cartData = JSON.parse(localStorage.getItem("cart")) || []
 
 
 
@@ -145,12 +144,19 @@ function Display(data){
     let btn = document.createElement("button")
     btn.innerText = "Add to Cart"
 
+    // let cartbtn = document.createElement("button")
+    // cartbtn.innerText = "Go to Cart"
+    
+    let cartAnchor = document.createElement("a")
+    cartAnchor.href = "./cart.html"
+    cartAnchor.innerText = "Go to Cart"
+
     btn.addEventListener("click",()=>{
         if(CheckDuplicate(data)){
             alert("Product Already in cart")
           }
           else {
-            cartData.push(data)
+            cartData.push({...data,quantity:1})
             localStorage.setItem("cart",JSON.stringify(cartData))
             alert("Product Added to cart")
             counting()
@@ -160,14 +166,14 @@ function Display(data){
     })
 
 
-
+    console.log(cartData);
 
 
     let detail = document.createElement("p")
     detail.innerText = "Details"
     detail.className = "detail"
     detail.addEventListener("click", ()=>{
-        desc.innerHTML =`Short sleeves,  <br> Jasrey lined, <br> 100% cotton lightweight material.`  + data.description
+        desc.innerHTML = data.description+`<br> Features: <br>• Short sleeves <br>• Ribbed neckline <br>• Cinched waist <br>• Tulle tutu skirt <br> Fabric & Care:<br>• 100% cotton lightweight jersey <br>• Tutu skirt: 100% polyester tulle <br>• Imported <br>• Machine washable`  
         desc.style.textAlign ="justify"
     })
 
@@ -178,7 +184,7 @@ function Display(data){
     div2.append(image)
     divSub3_1.append(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8)
     divSub3_2.append(imageblk,imagered,imagepink)
-    div3.append(price,title,ratings,color,divSub3_2,size,divSub3_1,btn,detail,desc)
+    div3.append(price,title,ratings,color,divSub3_2,size,divSub3_1,btn,cartAnchor,detail,desc)
 
     container.append(div1,div2,div3)
 

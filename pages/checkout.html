@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout page</title>
+    <link rel="stylesheet" href="/styles/checkout.css">
+</head>
+<body>
+
+
+
+    <div id="Top">
+        <p>Free Shipping on $35+ Orders</p>
+        <div>
+        <div>
+            <img src="/images/login2.png" alt="">
+            <p>login</p>
+        </div>
+        <div>
+            <img src="/images/ord.png" alt="">
+            <p>orders</p>
+        </div>
+        <div >
+            <img src="/images/cart.png" alt="">
+            <p id="count-item">Empty</p>
+        </div>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <div> 
+            <img src="/images/Fashion Geeks.jpg" alt="">
+            <h1>Fashion Geeks</h1>
+
+        </div>
+        <div id="navmid">
+            <div>
+                <h4>Girl</h4>
+                <P>9Y - 15Y</P>
+                <div class="Dropdown-menu">
+                    <a href="/pages/Category_page.html">• Tops (49)</a>
+                    <h5>• Dresses (54)</h5>
+                    <h5>• Bottoms (98)</h5>
+                    <h5>• Full Sets (25)</h5>
+                    <h5>• Accessories and More</h5>
+                </div>
+            </div>
+
+            <div>
+                <h4>Boy</h4>
+                <P>9Y - 15Y</P>
+            </div>
+            <div>
+                <h4>Kids</h4>
+                <P>4 - 14</P>
+            </div>
+            <div>
+                <h4>New & Popular</h4>
+            </div>
+            <div>
+                <h4>Sale</h4>
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="Find your product">
+            <button>search</button>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div id="container">
+        <div id="left-div">
+            <div id="address-div">
+                <h2>Shipping</h2>
+                <div>
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <input type="text" placeholder="Address line 1">
+                <input type="text" placeholder="Address line 2">
+                <div>
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="Pincode">             
+                </div>
+                <p> ✔ <span>Save this address to my account</span></p>
+            </div>
+
+            <div id="payment-div">
+                <h2>Payment</h2>
+                <div>
+                    <button>PayPal</button>
+                    <button>afterpay</button>
+                    <button>Credit card</button>
+                </div>
+                <input type="text" placeholder="Card Number">
+                <div>
+                    <input type="text" placeholder="MM/YY">
+                    <input type="text" placeholder="CVV">
+                </div>
+                <p> ✔ <span>Save to my account</span></p>
+            </div>
+        </div>
+
+
+        <div id="right-div">
+            <h3>Order summary</h3>
+            <hr>
+            <div>
+                <div>
+                    <p>Subtotal</p>
+                    <p>Shipping</p>
+                    <p>Estimated tax</p>
+                    <h3>Order total</h3>
+                </div>
+                <div>
+                    <p class="total">from data</p>
+                    <p>₹ 0.00</p>
+                    <p>₹ 0.00</p>
+                    <h3 id="Ordertotal">from input</h3>
+                </div>
+            </div>
+            <hr>
+            <button id="placeorder"> Place order</button>
+            <p>By clicking Place Order, you agree to our legal Terms and Conditions and Privacy policy.</p>
+        </div>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>
+
+<script src="/scripts/checkout.js"></script>
