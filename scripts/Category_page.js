@@ -60,7 +60,7 @@ data.forEach((element)=>{
     desc.innerText = element.description
 
     let ancher = document.createElement("a")
-    ancher.href = "http://127.0.0.1:5500/pages/Product.html"
+    ancher.href = "./Product.html"
 
     ancher.append(image, line, title, price, desc)
     card.append(ancher)
