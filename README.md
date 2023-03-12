@@ -21,11 +21,15 @@ FashionGeeks.com is an ecommerce website for Kids clothings, which is a clone of
 
 ## Features
 
-- User login
+- User register and login
 - Product categories 
-- Product sorting and filters
-- Shopping cart and checkout process
+- Product sorting and filtering
+- Product searching
+- Adding product to cart and checkout of product
 - Responsive design
+
+
+
 
 
 ## API Reference
