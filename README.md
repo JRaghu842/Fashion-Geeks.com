@@ -29,7 +29,8 @@ FashionGeeks.com is an ecommerce website for Kids clothings, which is a clone of
 - Responsive design
 
 
-
+## This is how Website looks like
+![alt text](
 
 
 ## API Reference
