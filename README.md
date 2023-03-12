@@ -38,7 +38,7 @@ FashionGeeks.com is an ecommerce website for Kids clothings, which is a clone of
 
 - Login and Register pages
 ![alt text](https://github.com/JRaghu842/offbeat-jeans-3946/blob/main/images/login.jpg)
-------------------------
+---
 ![alt text](https://github.com/JRaghu842/offbeat-jeans-3946/blob/main/images/register.jpg)
 
 ## Product Category page
