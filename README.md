@@ -46,7 +46,7 @@ FashionGeeks.com is an ecommerce website for Kids clothings, which is a clone of
 
 
 ## Product page
-![alt text](https://github.com/JRaghu842/offbeat-jeans-3946/blob/main/images/taupe-raindrop-61fc2e.netlify.app_.jpg)
+![alt text](https://github.com/JRaghu842/offbeat-jeans-3946/blob/main/images/product.png)
 
 
 ## Cart page
