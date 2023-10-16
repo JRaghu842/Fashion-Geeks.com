@@ -61,6 +61,6 @@ FashionGeeks.com is an ecommerce website for Kids clothings, which is a clone of
 
 ## API Reference
 
-- Products API link
+- ALl products from mockapi, link for mockapi
 https://63c6dfbcd307b7696742e8ff.mockapi.io/newone
 
